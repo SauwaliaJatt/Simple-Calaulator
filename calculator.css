@@ -1,5 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #divcenter{
+    color: rgb(229, 229, 229);
     position: absolute;
+    padding: 8px;
     top: 50%;
     left: 50%;
     height: 350px;
@@ -7,4 +15,157 @@
     transform: translate(-50%, -50%);
     background-color: rgb(40, 40, 40);
     border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-rows: repeat(5, 46px); */
+    grid-template-areas:
+        "display display display display"
+        "display display display display"
+        "button-AC button-changeSign button-percent button-divide"
+        "button-7 button-8 button-9 button-multiply"
+        "button-4 button-5 button-6 button-subtract"
+        "button-1 button-2 button-3 button-addition"
+        "button-toggle button-0 button-point button-equals";
+}
+
+#divcenter > div{
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#display{
+    width: 100% !important;
+    height: 100px !important;
+    grid-area: display;
+}
+
+#buttons{
+    color: rgb(237, 237, 237);
+    font-size: 1.5rem;
+}
+
+
+#button-AC {
+    grid-area: button-AC;
+    background-color: rgb(112, 112, 112);
+    border-radius: 50%;
+}
+
+#button-changeSign {
+    grid-area: button-changeSign;
+    background-color: rgb(112, 112, 112);
+    border-radius: 50%;
+}
+
+#button-percent {
+    grid-area: button-percent;
+    background-color: rgb(112, 112, 112);
+    border-radius: 50%;
+}
+
+#button-divide {
+    grid-area: button-divide;
+    background-color: rgb(255, 149, 3);
+    border-radius: 50%;
+}
+
+#button-7 {
+    grid-area: button-7;
+    background-color: rgb(81, 81, 81);
+    border-radius: 50%;
+}
+
+#button-8 {
+    grid-area: button-8;
+    background-color: rgb(81, 81, 81);
+    border-radius: 50%;
+}
+
+#button-9 {
+    grid-area: button-9;
+    background-color: rgb(81, 81, 81);
+    border-radius: 50%;
+}
+
+#button-multiply {
+    grid-area: button-multiply;
+    background-color: rgb(255, 149, 3);
+    border-radius: 50%;
+}
+
+#button-4 {
+    grid-area: button-4;
+    background-color: rgb(81, 81, 81);
+    border-radius: 50%;
+}
+
+#button-5 {
+    grid-area: button-5;
+    background-color: rgb(81, 81, 81);
+    border-radius: 50%;
+}
+
+#button-6 {
+    grid-area: button-6;
+    background-color: rgb(81, 81, 81);
+    border-radius: 50%;
+}
+
+#button-subtract {
+    grid-area: button-subtract;
+    background-color: rgb(255, 149, 3);
+    border-radius: 50%;
+}
+
+#button-1 {
+    grid-area: button-1;
+    background-color: rgb(81, 81, 81);
+    border-radius: 50%;
+}
+
+#button-2 {
+    grid-area: button-2;
+    background-color: rgb(81, 81, 81);
+    border-radius: 50%;
+}
+
+#button-3 {
+    grid-area: button-3;
+    background-color: rgb(81, 81, 81);
+    border-radius: 50%;
+}
+
+#button-addition {
+    grid-area: button-addition;
+    background-color: rgb(255, 149, 3);
+    border-radius: 50%;
+}
+
+#button-toggle {
+    grid-area: button-toggle;
+    background-color: rgb(81, 81, 81);
+    border-radius: 50%;
+}
+
+#button-0 {
+    grid-area: button-0;
+    background-color: rgb(81, 81, 81);
+    border-radius: 50%;
+}
+
+#button-point {
+    grid-area: button-point;
+    background-color: rgb(81, 81, 81);
+    border-radius: 50%;
+}
+
+#button-equals {
+    grid-area: button-equals;
+    background-color: rgb(255, 149, 3);
+    border-radius: 50%;
 }
