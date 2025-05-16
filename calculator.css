@@ -165,7 +165,7 @@ html, body{
     border-radius: 50%;
 }
 
-#button-toggle {
+#button-00 {
     grid-area: button-toggle;
     background-color: rgb(81, 81, 81);
     border-radius: 50%;
